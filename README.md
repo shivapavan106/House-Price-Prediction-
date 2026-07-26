@@ -119,8 +119,8 @@ Among all the evaluated models, **Linear Regression** achieved the highest **R²
 
 ### Step 1: Clone the Repository
 
-```bash
-git clone https://github.com/your-github-username/House-Price-Prediction-ML.git
+
+git clone https://github.com/shivapavan106/House-Price-Prediction-.git
 ```
 
 ### Step 2: Navigate to the Project Folder
@@ -164,10 +164,27 @@ cd House-Price-Prediction-ML
 ```
 
 ### 3. Install the required libraries
+## 📦 Required Libraries
+
+Install the required Python libraries using:
 
 ```bash
 pip install -r requirements.txt
 ```
+
+Or install them individually:
+
+```bash
+pip install pandas
+pip install numpy
+pip install scikit-learn
+pip install streamlit
+pip install joblib
+pip install openpyxl
+```
+
+
+
 
 ### 4. Run the Streamlit application
 
@@ -201,7 +218,7 @@ Example:
 
 ## 👨‍💻 Author
 
-**Shivapavan Kumar**
+** Gunisetti Shiva apavan Kumar**
 
 B.Tech in Artificial Intelligence
 
