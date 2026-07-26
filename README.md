@@ -1,44 +1,45 @@
-
 # 🏠 House Price Prediction using Machine Learning
 
 ## 📌 Project Overview
 
-The House Price Prediction project is a Machine Learning application that predicts the estimated price of a house based on its features. The model is trained using historical housing data and uses a Linear Regression algorithm to learn the relationship between property characteristics and house prices.
+The **House Price Prediction** project is a Machine Learning application that predicts the estimated price of a house based on its features. The model is trained using historical housing data and uses various regression algorithms to learn the relationship between house characteristics and their prices.
 
-The project includes a complete machine learning workflow, including data preprocessing, feature selection, model training, model evaluation, and model deployment. An interactive Streamlit web application allows users to enter house details such as the number of bedrooms, bathrooms, living area, lot size, floors, waterfront, view, condition, grade, year built, and garage capacity. Based on these inputs, the application predicts the estimated house price in real time
-
----
-
-## 🚀 Features
-
-- Data preprocessing and cleaning
-- Exploratory Data Analysis (EDA)
-- Feature engineering
-- Linear Regression model for price prediction
-- Interactive Streamlit web application
-- Real-time house price prediction
+The project includes a complete machine learning workflow, including data preprocessing, exploratory data analysis (EDA), feature engineering, model training, model evaluation, and model deployment. An interactive **Streamlit** web application allows users to enter house details such as the number of bedrooms, bathrooms, living area, lot size, floors, waterfront, view, condition, grade, year built, and garage capacity. Based on these inputs, the application predicts the estimated house price in real time.
 
 ---
 
-## 🛠️ Technologies Used
+# 🚀 Features
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Streamlit
-- Joblib
-- OpenPyXL
+* Data preprocessing and cleaning
+* Exploratory Data Analysis (EDA)
+* Feature engineering
+* Training and comparison of multiple regression models
+* Interactive Streamlit web application
+* Real-time house price prediction
 
 ---
 
-## 📂 Project Structure
+# 🛠️ Technologies Used
 
-```
-House-Price-Prediction-ML/
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Streamlit
+* Joblib
+* Matplotlib
+* Seaborn
+* OpenPyXL
+
+---
+
+# 📂 Project Structure
+
+```text
+House-Price-Prediction/
 │
 ├── app/
-│   └── house_app.py
+│   └── house.py
 │
 ├── notebooks/
 │   └── House_Price_Prediction.ipynb
@@ -62,42 +63,38 @@ House-Price-Prediction-ML/
 
 ---
 
-## 📊 Dataset Features
+# 📊 Dataset Features
 
 The model uses the following input features:
 
-- Bedrooms
-- Bathrooms
-- Sqft Living
-- Sqft Lot
-- Floors
-- Waterfront
-- View
-- Condition
-- Grade
-- Year Built
-- Garage Cars
+* Bedrooms
+* Bathrooms
+* Sqft Living
+* Sqft Lot
+* Floors
+* Waterfront
+* View
+* Condition
+* Grade
+* Year Built
+* Garage Cars
 
 ---
 
-## 🤖 Machine Learning Model
-
--Machine Learning Models
+# 🤖 Machine Learning Models
 
 The following regression models were trained and evaluated:
 
-Linear Regression
-K-Nearest Neighbors (KNN) Regressor
-Decision Tree Regressor
-Support Vector Regressor (SVR)
+* Linear Regression
+* K-Nearest Neighbors (KNN) Regressor
+* Decision Tree Regressor
+* Support Vector Regressor (SVR)
 
-After comparing the performance of all models using evaluation metrics such as R² Score and Root Mean Squared Error (RMSE), Linear Regression achieved the best overall performance and was selected for deployment in the Streamlit application.
+After comparing all models using **R² Score** and **Root Mean Squared Error (RMSE)**, **Linear Regression** achieved the best performance and was selected for deployment in the Streamlit application.
 
 ---
 
-## ## 📊 Model Performance
-
-Four machine learning regression models were trained and evaluated using **R² Score** and **Root Mean Squared Error (RMSE)**.
+# 📈 Model Performance
 
 | Model                               |   R² Score |          RMSE |
 | ----------------------------------- | ---------: | ------------: |
@@ -106,119 +103,77 @@ Four machine learning regression models were trained and evaluated using **R² S
 | K-Nearest Neighbors (KNN) Regressor |     0.7885 |    120,940.44 |
 | Support Vector Regressor (SVR)      |    -0.0003 |    263,032.72 |
 
-### Best Model
+### 🏆 Best Model
 
-Among all the evaluated models, **Linear Regression** achieved the highest **R² Score (0.9882)** and the lowest **RMSE (28,542.15)**. Based on these results, Linear Regression was selected as the final model and deployed in the Streamlit web application for house price prediction.
-
-> *Performance values may vary depending on the dataset and train-test split.*
+**Linear Regression** achieved the highest R² Score (**0.9882**) and the lowest RMSE (**28,542.15**). Therefore, it was selected as the final model for deployment in the Streamlit application.
 
 ---
 
-## ▶️ How to Run the Project
-## ▶️ How to Run the Project
+# ⚙️ Installation
 
-### Step 1: Clone the Repository
+### 1. Clone the Repository
 
-
+```bash
 git clone https://github.com/shivapavan106/House-Price-Prediction-.git
 ```
 
-### Step 2: Navigate to the Project Folder
+### 2. Navigate to the Project Folder
 
 ```bash
-cd House-Price-Prediction-ML
+cd House-Price-Prediction-
 ```
 
-### Step 3: Install the Required Libraries
+### 3. Install the Required Libraries
+
+```bash
+pip install pandas numpy scikit-learn streamlit joblib matplotlib seaborn openpyxl
+```
+
+Or, if you have a `requirements.txt` file:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 4: Run the Streamlit Application
+### 4. Run the Streamlit Application
+
+If your app file is named **house.py**:
 
 ```bash
-streamlit run app/house_app.py
+python -m streamlit run house.py --server.port 8502
 ```
 
-### Step 5: Open the Application
+If your app file is inside the **app** folder:
 
-After running the above command, Streamlit will display a local URL in the terminal, such as:
+```bash
+python -m streamlit run app/house.py --server.port 8502
+```
+
+### 5. Open the Application
+
+After running the application, Streamlit will display a local URL similar to:
 
 ```text
-Local URL: http://localhost:8501
+Local URL: http://localhost:8502
 ```
 
 Open this URL in your web browser to use the House Price Prediction application.
 
-### 1. Clone the repository
+---
 
-```bash
-git clone https://github.com/your-username/House-Price-Prediction-ML.git
-```
+# 🎯 Future Improvements
 
-### 2. Navigate to the project folder
-
-```bash
-cd House-Price-Prediction-ML
-```
-
-### 3. Install the required libraries
-## 📦 Required Libraries
-
-Install the required Python libraries using:
-
-```bash
-pip install -r requirements.txt
-```
-
-Or install them individually:
-
-```bash
-pip install pandas
-pip install numpy
-pip install scikit-learn
-pip install streamlit
-pip install joblib
-pip install openpyxl
-```
-
-
-
-
-### 4. Run the Streamlit application
-
-```bash
-streamlit run app/house_app.py
-```
+* Implement advanced ensemble regression models.
+* Deploy the application on Streamlit Community Cloud.
+* Improve the user interface and user experience.
+* Compare additional machine learning algorithms.
+* Integrate real-time housing datasets.
 
 ---
 
-## 📸 Screenshots
+# 👨‍💻 Author
 
-Add screenshots of your application in the **screenshots** folder.
-
-Example:
-
-- Home Page
-- User Input Form
-- Prediction Result
-
----
-
-## 🎯 Future Improvements
-
-- Add more advanced regression models
-- Deploy the application online
-- Improve UI/UX
-- Add model comparison
-- Integrate real-time datasets
-
----
-
-## 👨‍💻 Author
-
-** Gunisetti Shiva apavan Kumar**
+**Gunisetti Shivapavan Kumar**
 
 B.Tech in Artificial Intelligence
 
@@ -226,6 +181,6 @@ Passionate about Machine Learning, Data Science, and Artificial Intelligence.
 
 ---
 
-## ⭐ Support
+# ⭐ Support
 
 If you found this project helpful, please consider giving it a ⭐ on GitHub.
